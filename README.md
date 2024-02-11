@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="startScreen" class="active">
+    <div id="startScreen" class="screen">
         <h1>Do you want to be my girlfriend, Zoya?</h1>
         <button id="yesBtn">Yes</button>
         <button id="noBtn">No</button>
     </div>
 
-    <!-- Puzzle Game -->
-    <div id="puzzleContainer" class="game">
-      <!-- Puzzle pieces will be dynamically added here -->
+    <div id="gameContainer" class="screen" style="display:none;">
+        <h2>Help Hello Kitty find her friends!</h2>
+        <div id="memoryGameContainer"></div>
+        <button id="completeGames">Complete Games</button>
     </div>
 
-    <!-- Memory Card Game -->
-    <div id="memoryGameContainer" class="game">
-      <!-- Cards will be dynamically added here -->
+    <div id="loveExpressionContainer" class="screen" style="display:none;">
+        <h2>Express your love!</h2>
+        <textarea id="loveMessage" rows="4" cols="50"></textarea>
+        <button id="submitLove">Submit Love</button>
     </div>
-
-    <!-- Catch the Hearts Game -->
-    <div id="catchGameContainer" class="game">
-      <!-- Hearts will be dynamically added here -->
-    </div>
-
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
